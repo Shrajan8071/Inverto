@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box,
+}
+body{
+    height: 200vh;
+    width: 100%;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  /* width: 15%; */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  /* display: block; */
+  /* background-color: inherit; */
+  color: rgb(148, 148, 148);
+  /* background-color: rgb(31 41 55); */
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  margin:3px 0px;
+  /* cursor: pointer; */
+  transition: 0.3s;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  border: none;
+  background-color: rgb(58, 56, 56);
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+.container1 {
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.instructions {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    width: 400px;
+    height: 200px;
+    border: 2px dashed #cccccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #28a745;
+}
+
+/* --------------------------------- */
+
+
+#pdf-container {
+  height: 700px;
+  overflow: auto;
+  position: relative;
+}
+
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
